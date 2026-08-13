@@ -179,7 +179,7 @@ export default function Skills() {
 
         p.el.style.transform = `translate(-50%,-50%) translate(${sx}px,${sy}px) scale(${(0.72 + depth * 0.5).toFixed(3)})`;
         p.el.style.opacity = opacity.toFixed(2);
-        p.el.style.filter = rightness() drop-shadow(0 0 px );
+        p.el.style.filter = `brightness(${(0.72 + depth * 0.42).toFixed(2)}) drop-shadow(0 0 ${Math.round(4 + depth * 10)}px ${p.ai ? 'rgba(83,216,201,.34)' : 'rgba(120,160,190,.12)'})`;
         p.el.style.zIndex = p.hovered ? '99999' : String(Math.round(z2 + 1000));
       });
     };

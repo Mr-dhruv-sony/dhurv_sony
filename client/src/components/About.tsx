@@ -209,7 +209,7 @@ export default function About() {
           {/* Portrait */}
           <div style={{ flex: 1, borderRadius: 16, overflow: 'hidden', position: 'relative', minHeight: 260 }}>
             <img
-              src="/tech-avatar.svg"
+              src="/man-with-glasses-purple-background-with-picture-man-with-glasses-his-face_1221953-80174.avif"
               alt="Tech developer character representing Dhruv Kumar Sony"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
             />
@@ -294,5 +294,6 @@ export default function About() {
     </section>
   );
 }
+
 
 
