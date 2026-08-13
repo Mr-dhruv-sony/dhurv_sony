@@ -163,45 +163,22 @@ export default function SideNav() {
           </nav>
         </div>
 
-        {/* Footer */}
+        {/* Compact status card */}
         <div
           style={{
-            fontFamily: 'var(--mono)',
-            fontSize: 11,
-            color: 'var(--text-faint)',
-            lineHeight: 1.9,
+            border: '1px solid rgba(83,216,201,.2)',
+            borderRadius: 14,
+            padding: '14px 14px 13px',
+            background: 'linear-gradient(145deg, rgba(83,216,201,.08), rgba(255,255,255,.02))',
+            boxShadow: '0 14px 35px rgba(0,0,0,.18)',
           }}
         >
-          Patna, Bihar, IN
-          <br />
-          <a
-            href="mailto:mr.dhruvsony@gmail.com"
-            style={{ display: 'block' }}
-            onMouseEnter={(e) => ((e.target as HTMLElement).style.color = 'var(--signal)')}
-            onMouseLeave={(e) => ((e.target as HTMLElement).style.color = 'var(--text-faint)')}
-          >
-            mr.dhruvsony@gmail.com
-          </a>
-          <a
-            href="https://github.com/Mr-dhruv-sony"
-            target="_blank"
-            rel="noopener"
-            style={{ display: 'block' }}
-            onMouseEnter={(e) => ((e.target as HTMLElement).style.color = 'var(--signal)')}
-            onMouseLeave={(e) => ((e.target as HTMLElement).style.color = 'var(--text-faint)')}
-          >
-            github.com/Mr-dhruv-sony
-          </a>
-          <a
-            href="https://www.linkedin.com/in/mr-dhruv-soni/"
-            target="_blank"
-            rel="noopener"
-            style={{ display: 'block' }}
-            onMouseEnter={(e) => ((e.target as HTMLElement).style.color = 'var(--signal)')}
-            onMouseLeave={(e) => ((e.target as HTMLElement).style.color = 'var(--text-faint)')}
-          >
-            linkedin.com/in/mr-dhruv-soni
-          </a>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'var(--mono)', fontSize: 10, color: 'var(--signal)', letterSpacing: '.12em', textTransform: 'uppercase' }}>
+            <span className="anim-pulse-dot" style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--signal)', boxShadow: '0 0 8px var(--signal)' }} />
+            Learning in public
+          </div>
+          <div style={{ marginTop: 10, fontFamily: 'var(--disp)', fontSize: 18, fontWeight: 700, color: 'var(--text)' }}>AI / ML builder</div>
+          <div style={{ marginTop: 5, fontFamily: 'var(--mono)', fontSize: 10.5, lineHeight: 1.5, color: 'var(--text-faint)' }}>GenAI · Agents · ML · Full-stack</div>
         </div>
       </aside>
 
@@ -222,3 +199,4 @@ export default function SideNav() {
     </>
   );
 }
+

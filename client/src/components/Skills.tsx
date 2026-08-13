@@ -8,7 +8,8 @@ const SKILLS = [
   { n: 'AI Agents', label: 'AI AGENTS', ai: true },
   { n: 'MCP Servers', label: 'MCP', ai: true },
   { n: 'RAG & Prompt Engineering', label: 'RAG', ai: true },
-  { n: 'Make.com', label: 'MAKE', ai: true },
+  { n: 'Make.com', logo: 'https://cdn.simpleicons.org/make/53d8c9', ai: true },
+  { n: 'n8n', logo: 'https://cdn.simpleicons.org/n8n/53d8c9', ai: true },
   { n: 'Discord Bot Dev', label: 'DISCORD', ai: true },
   { n: 'Python', icon: 'devicon-python-plain colored' },
   { n: 'Java', icon: 'devicon-java-plain colored' },
@@ -77,7 +78,16 @@ export default function Skills() {
       `;
       el.setAttribute('data-label', s.n);
 
-      if ('icon' in s && s.icon) {
+      if ('logo' in s && s.logo) {
+        const logo = document.createElement('img');
+        logo.src = s.logo;
+        logo.alt = s.n;
+        logo.width = 30;
+        logo.height = 30;
+        logo.style.objectFit = 'contain';
+        logo.style.filter = 'drop-shadow(0 0 8px rgba(83,216,201,.22))';
+        el.appendChild(logo);
+      } else if ('icon' in s && s.icon) {
         const icon = document.createElement('i');
         icon.className = s.icon;
         icon.style.fontSize = '26px';
