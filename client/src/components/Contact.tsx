@@ -51,10 +51,11 @@ export default function Contact() {
         }}
       >
         <span>© 2026 Dhruv Kumar Sony · Patna, Bihar, India</span>
-        <span>Designed and made by Dhruv Sony</span>
+        <span>Designed and built by Dhruv Sony ❤️</span>
       </footer>
     </section>
   );
 }
+
 
 
