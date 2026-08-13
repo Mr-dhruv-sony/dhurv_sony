@@ -12,7 +12,8 @@ const SKILLS = [
   { n: 'n8n', logo: 'https://cdn.simpleicons.org/n8n/53d8c9', ai: true },
   { n: 'Discord Bot Development', logo: 'https://cdn.simpleicons.org/discord/5865f2', ai: true },
   { n: 'Python', logo: 'https://cdn.simpleicons.org/python/3776ab' },
-  { n: 'Java', logo: 'https://cdn.simpleicons.org/openjdk/ed8b00' },
+  { n: 'Linux', logo: 'https://cdn.simpleicons.org/linux/fcc624' },
+  { n: 'Java', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
   { n: 'JavaScript', logo: 'https://cdn.simpleicons.org/javascript/f7df1e' },
   { n: 'TypeScript', logo: 'https://cdn.simpleicons.org/typescript/3178c6' },
   { n: 'React', logo: 'https://cdn.simpleicons.org/react/61dafb' },
@@ -28,13 +29,13 @@ const SKILLS = [
   { n: 'Git / GitHub', logo: 'https://cdn.simpleicons.org/github/ffffff' },
   { n: 'Data Structures', logo: 'https://cdn.simpleicons.org/cplusplus/00599c' },
   { n: 'Algorithms', logo: 'https://cdn.simpleicons.org/cplusplus/53d8c9' },
-  { n: 'Object-Oriented Programming', logo: 'https://cdn.simpleicons.org/openjdk/ed8b00' },
+  { n: 'Object-Oriented Programming', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
   { n: 'Database Management', logo: 'https://cdn.simpleicons.org/mysql/4479a1' },
   { n: 'Machine Learning', logo: 'https://cdn.simpleicons.org/scikitlearn/f7931e', ai: true },
   { n: 'Model Evaluation', logo: 'https://cdn.simpleicons.org/mlflow/0194e2', ai: true },
   { n: 'Mongoose', logo: 'https://cdn.simpleicons.org/mongoose/880000' },
   { n: 'Axios', logo: 'https://cdn.simpleicons.org/axios/5a29e4' },
-  { n: 'JDBC', logo: 'https://cdn.simpleicons.org/openjdk/ed8b00' },
+  { n: 'JDBC', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
 ];
 
 export default function Skills() {
@@ -312,6 +313,7 @@ export default function Skills() {
     </section>
   );
 }
+
 
 
 
