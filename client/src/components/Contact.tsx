@@ -51,9 +51,10 @@ export default function Contact() {
         }}
       >
         <span>© 2026 Dhruv Kumar Sony · Patna, Bihar, India</span>
-        <span>Designed &amp; built with React 19 + Gemini AI</span>
+        <span>Designed and made by Dhruv Sony</span>
       </footer>
     </section>
   );
 }
+
 
