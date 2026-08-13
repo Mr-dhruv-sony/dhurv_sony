@@ -1,40 +1,40 @@
 import { useEffect, useRef } from 'react';
 
 const SKILLS = [
-  { n: 'Generative AI', label: 'GEN AI', ai: true },
-  { n: 'Google Gemini AI', label: 'GEMINI', ai: true },
-  { n: 'OpenAI APIs', label: 'OPENAI', ai: true },
-  { n: 'Agentic AI', label: 'AGENTS', ai: true },
-  { n: 'AI Agents', label: 'AI AGENTS', ai: true },
-  { n: 'MCP Servers', label: 'MCP', ai: true },
-  { n: 'RAG & Prompt Engineering', label: 'RAG', ai: true },
+  { n: 'Generative AI', logo: 'https://cdn.simpleicons.org/googlegemini/53d8c9', ai: true },
+  { n: 'Google Gemini AI', logo: 'https://cdn.simpleicons.org/googlegemini/53d8c9', ai: true },
+  { n: 'OpenAI APIs', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg', ai: true },
+  { n: 'Agentic AI', logo: 'https://cdn.simpleicons.org/langchain/53d8c9', ai: true },
+  { n: 'AI Agents', logo: 'https://cdn.simpleicons.org/langchain/53d8c9', ai: true },
+  { n: 'MCP Servers', logo: 'https://cdn.simpleicons.org/modelcontextprotocol/53d8c9', ai: true },
+  { n: 'RAG & Prompt Engineering', logo: 'https://cdn.simpleicons.org/langchain/53d8c9', ai: true },
   { n: 'Make.com', logo: 'https://cdn.simpleicons.org/make/53d8c9', ai: true },
   { n: 'n8n', logo: 'https://cdn.simpleicons.org/n8n/53d8c9', ai: true },
-  { n: 'Discord Bot Dev', label: 'DISCORD', ai: true },
-  { n: 'Python', icon: 'devicon-python-plain colored' },
-  { n: 'Java', icon: 'devicon-java-plain colored' },
-  { n: 'JavaScript', icon: 'devicon-javascript-plain colored' },
-  { n: 'TypeScript', icon: 'devicon-typescript-plain colored' },
-  { n: 'React 19', icon: 'devicon-react-original colored' },
-  { n: 'Next.js', icon: 'devicon-nextjs-original' },
-  { n: 'HTML5', icon: 'devicon-html5-plain colored' },
-  { n: 'CSS3', icon: 'devicon-css3-plain colored' },
-  { n: 'Node.js', icon: 'devicon-nodejs-plain colored' },
-  { n: 'Express.js', icon: 'devicon-express-original' },
-  { n: 'RESTful APIs', label: 'REST' },
-  { n: 'JWT Auth', label: 'JWT' },
-  { n: 'MongoDB', icon: 'devicon-mongodb-plain colored' },
-  { n: 'PostgreSQL', icon: 'devicon-postgresql-plain colored' },
-  { n: 'Git / GitHub', icon: 'devicon-github-original' },
-  { n: 'Data Structures', label: 'DSA' },
-  { n: 'Algorithms', label: 'ALGO' },
-  { n: 'OOP', label: 'OOP' },
-  { n: 'DBMS', label: 'DBMS' },
-  { n: 'Machine Learning', label: 'ML', ai: true },
-  { n: 'Model Evaluation', label: 'EVAL', ai: true },
-  { n: 'Mongoose', label: 'MNGS' },
-  { n: 'Axios', label: 'AXIOS' },
-  { n: 'JDBC', label: 'JDBC' },
+  { n: 'Discord Bot Development', logo: 'https://cdn.simpleicons.org/discord/5865f2', ai: true },
+  { n: 'Python', logo: 'https://cdn.simpleicons.org/python/3776ab' },
+  { n: 'Java', logo: 'https://cdn.simpleicons.org/openjdk/ed8b00' },
+  { n: 'JavaScript', logo: 'https://cdn.simpleicons.org/javascript/f7df1e' },
+  { n: 'TypeScript', logo: 'https://cdn.simpleicons.org/typescript/3178c6' },
+  { n: 'React', logo: 'https://cdn.simpleicons.org/react/61dafb' },
+  { n: 'Next.js', logo: 'https://cdn.simpleicons.org/nextdotjs/ffffff' },
+  { n: 'HTML5', logo: 'https://cdn.simpleicons.org/html5/e34f26' },
+  { n: 'CSS3', logo: 'https://cdn.simpleicons.org/css/1572b6' },
+  { n: 'Node.js', logo: 'https://cdn.simpleicons.org/nodedotjs/5fa04e' },
+  { n: 'Express.js', logo: 'https://cdn.simpleicons.org/express/ffffff' },
+  { n: 'RESTful APIs', logo: 'https://cdn.simpleicons.org/swagger/85ea2d' },
+  { n: 'JWT Authentication', logo: 'https://cdn.simpleicons.org/jsonwebtokens/ffffff' },
+  { n: 'MongoDB', logo: 'https://cdn.simpleicons.org/mongodb/47a248' },
+  { n: 'PostgreSQL', logo: 'https://cdn.simpleicons.org/postgresql/4169e1' },
+  { n: 'Git / GitHub', logo: 'https://cdn.simpleicons.org/github/ffffff' },
+  { n: 'Data Structures', logo: 'https://cdn.simpleicons.org/cplusplus/00599c' },
+  { n: 'Algorithms', logo: 'https://cdn.simpleicons.org/cplusplus/53d8c9' },
+  { n: 'Object-Oriented Programming', logo: 'https://cdn.simpleicons.org/openjdk/ed8b00' },
+  { n: 'Database Management', logo: 'https://cdn.simpleicons.org/mysql/4479a1' },
+  { n: 'Machine Learning', logo: 'https://cdn.simpleicons.org/scikitlearn/f7931e', ai: true },
+  { n: 'Model Evaluation', logo: 'https://cdn.simpleicons.org/mlflow/0194e2', ai: true },
+  { n: 'Mongoose', logo: 'https://cdn.simpleicons.org/mongoose/880000' },
+  { n: 'Axios', logo: 'https://cdn.simpleicons.org/axios/5a29e4' },
+  { n: 'JDBC', logo: 'https://cdn.simpleicons.org/openjdk/ed8b00' },
 ];
 
 export default function Skills() {
@@ -78,25 +78,15 @@ export default function Skills() {
       `;
       el.setAttribute('data-label', s.n);
 
-      if ('logo' in s && s.logo) {
+      if (s.logo) {
         const logo = document.createElement('img');
         logo.src = s.logo;
         logo.alt = s.n;
         logo.width = 30;
         logo.height = 30;
         logo.style.objectFit = 'contain';
-        logo.style.filter = 'drop-shadow(0 0 8px rgba(83,216,201,.22))';
+        logo.style.filter = s.ai ? 'drop-shadow(0 0 8px rgba(83,216,201,.28))' : 'drop-shadow(0 0 6px rgba(255,255,255,.12))';
         el.appendChild(logo);
-      } else if ('icon' in s && s.icon) {
-        const icon = document.createElement('i');
-        icon.className = s.icon;
-        icon.style.fontSize = '26px';
-        el.appendChild(icon);
-      } else {
-        const span = document.createElement('span');
-        span.textContent = (s as { label: string }).label;
-        span.style.cssText = `font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:.02em; color:${s.ai ? 'var(--signal)' : 'var(--text-dim)'};`;
-        el.appendChild(span);
       }
 
       // Tooltip
@@ -322,5 +312,10 @@ export default function Skills() {
     </section>
   );
 }
+
+
+
+
+
 
 
