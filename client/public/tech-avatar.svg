@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Dhruv Sony, AI and full-stack developer</title>
+  <desc id="desc">A friendly tech developer character working with a laptop in a dark neon workspace.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="75%"><stop offset="0" stop-color="#183243"/><stop offset="1" stop-color="#091016"/></radialGradient>
+    <linearGradient id="hoodie" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#273b54"/><stop offset="1" stop-color="#101a2a"/></linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2b487"/><stop offset="1" stop-color="#b96f55"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72f5dc"/><stop offset="1" stop-color="#2c83aa"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="round"><circle cx="360" cy="360" r="330"/></clipPath>
+  </defs>
+  <circle cx="360" cy="360" r="330" fill="url(#bg)" stroke="#53d8c9" stroke-opacity=".38" stroke-width="3"/>
+  <g clip-path="url(#round)">
+    <path d="M30 160h660M30 240h660M30 320h660M30 400h660M30 480h660M30 560h660M30 640h660" stroke="#8ae6e0" stroke-opacity=".07"/>
+    <path d="M120 30v660M200 30v660M280 30v660M360 30v660M440 30v660M520 30v660M600 30v660" stroke="#8ae6e0" stroke-opacity=".07"/>
+    <circle cx="540" cy="170" r="100" fill="#53d8c9" opacity=".07" filter="url(#glow)"/>
+    <path d="M105 650c15-115 87-186 178-202l77 38 80-38c96 18 166 90 181 202Z" fill="url(#hoodie)" stroke="#6de8d8" stroke-opacity=".5" stroke-width="3"/>
+    <path d="M286 460h148v76c-42 27-106 27-148 0Z" fill="url(#skin)"/>
+    <path d="M232 260c0-84 54-142 132-142s132 58 132 142v112c0 82-63 143-132 143s-132-61-132-143Z" fill="url(#skin)" stroke="#f3c09d" stroke-opacity=".4" stroke-width="3"/>
+    <path d="M230 279c-28-98 28-176 136-176 93 0 149 61 132 161-20-23-43-38-78-45-60 36-130 46-190 60Z" fill="#172333"/>
+    <path d="M251 236c4-70 56-105 115-105 56 0 102 31 116 89-70 23-150 30-231 16Z" fill="#25364c"/>
+    <path d="M270 326c18-12 39-12 57 0M393 326c18-12 39-12 57 0" fill="none" stroke="#1c2633" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="299" cy="337" r="6" fill="#111923"/><circle cx="421" cy="337" r="6" fill="#111923"/>
+    <path d="M334 371c13 8 29 8 42 0M327 407c21 16 45 16 66 0" fill="none" stroke="#8e4e4b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M242 303c-18-8-31 4-31 25s20 35 39 27M478 303c18-8 31 4 31 25s-20 35-39 27" fill="url(#skin)"/>
+    <path d="M211 509c-40 35-66 87-75 141h448c-10-58-38-108-78-141l-70 36-73-22-78 22Z" fill="url(#hoodie)"/>
+    <path d="M354 489l6 84 6-84" stroke="#53d8c9" stroke-opacity=".45" stroke-width="4"/>
+    <path d="M321 508l39 41 39-41" fill="none" stroke="#53d8c9" stroke-opacity=".55" stroke-width="4"/>
+    <rect x="211" y="532" width="298" height="166" rx="14" fill="#0b141d" stroke="#53d8c9" stroke-width="5"/>
+    <rect x="229" y="550" width="262" height="123" rx="6" fill="#102b35"/>
+    <path d="M248 580h104M248 603h155M248 626h78" stroke="url(#screen)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M335 582l18 13-18 13M365 608h37" stroke="#d47df2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M177 705h366" stroke="#53d8c9" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="570" cy="270" r="28" fill="#0b1720" stroke="#53d8c9" stroke-width="3"/><path d="M558 270h24M570 258v24" stroke="#53d8c9" stroke-width="3"/>
+    <text x="92" y="170" fill="#53d8c9" opacity=".8" font-family="monospace" font-size="23">AI / ML</text>
+    <text x="503" y="620" fill="#d47df2" opacity=".8" font-family="monospace" font-size="18">&lt;/&gt;</text>
+  </g>
+</svg>
