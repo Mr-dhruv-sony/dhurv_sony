@@ -160,7 +160,7 @@ export default function About() {
       </div>
 
       {/* Row 2: Mindset + Photo + Craft */}
-      <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
+      <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20 }}>
 
         {/* Mindset card */}
         <div
@@ -207,11 +207,11 @@ export default function About() {
         {/* Photo + Location */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           {/* Portrait */}
-          <div style={{ flex: 1, borderRadius: 16, overflow: 'hidden', position: 'relative', minHeight: 260 }}>
+          <div style={{ flex: 1, borderRadius: 16, overflow: 'hidden', position: 'relative', minHeight: 260, padding: 10, background: 'var(--panel)', border: '1px solid var(--line)' }}>
             <img
               src="/man-with-glasses-purple-background-with-picture-man-with-glasses-his-face_1221953-80174.avif"
               alt="Tech developer character representing Dhruv Kumar Sony"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', borderRadius: 10, display: 'block' }}
             />
           </div>
           {/* Location */}
