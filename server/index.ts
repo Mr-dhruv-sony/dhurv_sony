@@ -75,6 +75,10 @@ async function startServer() {
 
   app.use(express.json());
 
+  app.get("/health", (_req, res) => {
+    res.json({ status: "ok" });
+  });
+
   // Serve static files from dist/public in production
   const staticPath =
     process.env.NODE_ENV === "production"
